@@ -1,0 +1,364 @@
+/* General navbar styling */
+.navbar {
+    background-color: #1f242d !important;
+    font-family: 'poppins', 'sans-serif';
+}
+
+.navbar-brand img {
+    max-width: 41px;
+    min-width: 4vw;
+    border-radius: 50%;
+}
+
+/* Navbar links styling */
+.navbar-nav .nav-link {
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect with glow */
+.navbar-nav .nav-link:hover {
+    color: #0ef;
+    text-shadow: 0px 0px 5px #0ef;
+}
+
+/* Active state: Only text color changes */
+.navbar-nav .nav-link.active {
+    color: #0ef;
+    text-shadow: none;
+}
+
+/* Navbar toggler (three-line icon) styling */
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.footer .container{
+    margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+.bodyIndex{
+    height: 100%;
+    background-color: #323946;
+}
+.container{
+    background-color: #1f242d;
+  color: white;
+  font-family: 'poppins', 'sans-serif';
+
+}
+span{
+    color: #0ef;
+
+}
+.contactdeatail p{
+    margin: 0;
+    padding: 0;
+}
+.maintitle{
+    text-align: center;
+  font-family: 'poppins', 'sans-serif';
+  padding-top: 13px;
+  font-weight: bold;
+  color: #0ef;
+}
+.bodyAbout{
+    height: 100%;
+  background-color: #323946;
+}
+.aboutContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 44px;
+  }
+  
+  .leftimg img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 13px;
+  }
+  
+  .rightpara {
+    flex: 1;
+    margin-left: 20px;
+    color: white;
+  text-align: justify;
+  }
+  
+  @media (max-width: 768px) {
+    .aboutContainer {
+      flex-direction: column;
+      align-items: center;
+      text-align: justify;
+    }
+  
+    .rightpara {
+      margin-left: 0;
+      margin-top: 20px;
+      text-align: justify;
+    }
+  
+    .leftimg img {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .firstContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Adjusts alignment for smaller screens */
+    align-items: center;
+    width: 90%; /* Slightly larger width for better responsiveness */
+    margin: auto;
+    background-color: #1f242d;
+    position: relative;
+    top: 30px;
+    padding: 20px; /* Adds some spacing for smaller screens */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    margin-bottom: 74px;
+  }
+  
+  .firstContainer .rightpara {
+    flex: 1;
+    margin: 10px;
+    color: white;
+    text-align: center; /* Centers text for smaller screens */
+  }
+  
+  .firstContainer .leftimg img {
+    width: 100%;
+    max-width: 200px; /* Limits image size for larger screens */
+    border-radius: 13px;
+  }
+  
+  /* Responsive Design for tablets and smaller screens */
+  @media (max-width: 768px) {
+    .firstContainer {
+      flex-direction: column; /* Stacks elements vertically */
+      align-items: center; /* Centers items */
+    }
+  
+    .firstContainer .rightpara {
+      margin: 10px 0; /* Adds spacing for stacked elements */
+    }
+  
+    .firstContainer .leftimg img {
+      max-width: 150px; /* Reduces image size for smaller screens */
+    }
+  }
+  
+  /* Responsive Design for mobile devices */
+  @media (max-width: 480px) {
+    .firstContainer {
+      width: 100%; /* Utilizes full screen width */
+      padding: 10px;
+    }
+  
+    .firstContainer .rightpara {
+      font-size: 14px; /* Adjusts text size for readability */
+      margin: 5px 0;
+    }
+  
+    .firstContainer .leftimg img {
+      max-width: 120px; /* Further reduces image size */
+    }
+  }
+  
+  .bodyGall{
+    height: 100%;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #323946;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-info h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+    color: #0ef;
+}
+
+.card-info p {
+    font-size: 1rem;
+    color: white;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .card-container {
+        grid-template-columns: 1fr; /* 1 column on mobile screens */
+    }
+}
+.bodyboard{
+  height: 100%;
+  background-color:#1f242d ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 1s ease;
+}
+
+.slide {
+  min-width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .content {
+      padding: 10px;
+  }
+
+  h2 {
+      font-size: 1.5rem;
+  }
+
+  p {
+      font-size: 0.9rem;
+  }
+}
+
+.programContainer {
+  display: flex;
+  flex-wrap: wrap; /* Ensures elements wrap to the next line on smaller screens */
+  justify-content: space-between;
+  gap: 20px; /* Optional spacing between elements */
+  margin: 20px;
+  
+}
+
+.leftpro {
+  flex: 1; /* Allows the elements to adjust their size equally */
+  min-width: 300px; /* Ensures a reasonable minimum width */
+  padding: 10px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width calculations */
+}
+
+.leftpro img {
+  max-width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Removes inline gap below the image */
+  border-radius: 5%;
+}
+
+@media (max-width: 768px) {
+  .programContainer {
+    flex-direction: column; /* Stacks elements vertically on smaller screens */
+    align-items: center; /* Centers content */
+  }
+
+  .leftpro {
+    text-align: center; /* Centers text and content for smaller screens */
+  }
+}
+

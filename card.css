@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0);
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card-icon {
+    background-color: #1f242d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+.card-title {
+    font-size: 1.5rem;
+    margin: 15px;
+    color: #0ef;
+}
+.card-content {
+    font-size: 1rem;
+    margin: 0 15px 15px 15px;
+    color: white;
+
+}
